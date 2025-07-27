@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inventory Management System</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by SKU, Name, or Keyword...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="stats">
+                <span id="totalProducts">Total Products: 0</span>
+                <span id="lowStock">Low Stock Items: 0</span>
+            </div>
+
+            <div id="loading" class="loading">Loading inventory data...</div>
+            <div id="error" class="error" style="display: none;"></div>
+            
+            <div id="productsContainer" class="products-grid">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
