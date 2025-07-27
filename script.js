@@ -1,7 +1,7 @@
 // Configuration - Replace with your Google Sheets details
 const CONFIG = {
     // Your Google Sheet ID (from the URL)
-    SPREADSHEET_ID: '1o6Csb0Ny_n4G4wVYWtGIvP59RYBnCVa1Dip85_0pQ1o',
+    SPREADSHEET_ID: '1ItaGPQJcvDi9TnrllPsd74SK9_ctnC_gh4h-xw2gm5o',
     // Your API Key (get from Google Cloud Console)
     API_KEY: 'AIzaSyB1CUHpkRJj-Lo2sU1gNFAqbvMdJDFRT4Q',
     // Range of your data (adjust if needed)
@@ -11,11 +11,11 @@ const CONFIG = {
 // Column mapping - Adjust based on your Google Sheet structure
 const COLUMN_MAPPING = {
     SKU: 0,          // Column A
-    NAME: 1,         // Column B
-    URL: 2,          // Column C
-    CURRENT_STOCK: 3, // Column D
-    IMAGE: 4,        // Column E
-    INCOMING_STOCK: 5 // Column F
+    STOCK IN HAND: 1,         // Column B
+    OWD ID: 2,          // Column C
+    PRODUCT NAME: 3, // Column D
+    MANUFACTURER: 4,        // Column E
+    PRODUCT URL: 5 // Column F
 };
 
 class InventoryManager {
